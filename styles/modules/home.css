@@ -1,3 +1,7 @@
+.desktop-header {
+  display: none;
+}
+
 .banner-img {
   width: 100%;
   max-inline-size: 100%;
@@ -15,7 +19,9 @@
   .header {
     display: flex;
     align-items: center;
-    padding-inline-end: 48px;
+    padding-inline-end: 1rem;
+    height: max-content;
+    /* background-color: tomato; */
   }
   .banner-img {
     width: 27.3125rem;
@@ -28,5 +34,45 @@
     margin-inline-start: -3rem;
     padding: 0;
     gap: 3rem;
+  }
+}
+
+@media (width > 74em) {
+  .desktop-header {
+    background-color: var(--dark);
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    height: 50rem;
+  }
+  .desktop-heading-white,
+  .desktop-heading-black {
+    position: absolute;
+    top: 11.81rem;
+    left: 10.31rem;
+    color: var(--white);
+
+    font-family: "Big Shoulders Display Black";
+    font-size: var(--heading-1);
+    line-height: 0.91667;
+    text-transform: uppercase;
+    z-index: 4;
+  }
+  .desktop-heading-black {
+    color: var(--dark);
+    z-index: 3;
+  }
+  .header {
+    /* background-color: turquoise; */
+    height: max-content;
+    position: relative;
+  }
+  .banner-img {
+    width: 33.75rem;
+    height: 50rem;
+    flex-shrink: 0;
+  }
+  .hero-heading {
+    display: none;
   }
 }

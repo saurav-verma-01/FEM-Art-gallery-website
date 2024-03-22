@@ -10,11 +10,36 @@
   <body>
     <!-- Header Section -->
     <header class="header">
-      <img
-        src="images/mobile/image-hero.jpg"
-        alt="art gallery picture presentation"
-        class="banner-img"
-      />
+      <div class="desktop-header">
+        <h1 class="desktop-heading-white">MODERN <br />ART GALLERY</h1>
+        <h1 class="desktop-heading-black">MODERN <br />ART GALLERY</h1>
+      </div>
+      <picture class="banner-img">
+        <source
+          srcset="
+            images/desktop/image-hero.jpg    1x,
+            images/desktop/image-hero@2x.jpg 2x
+          "
+          media="(width>68em)"
+        />
+        <source
+          srcset="
+            images/tablet/image-hero.jpg    1x,
+            images/tablet/image-hero@2x.jpg 2x
+          "
+          media="(width>44em)"
+        />
+
+        <img
+          src="images/mobile/image-hero.jpg"
+          alt="art gallery picture presentation"
+          class="banner-img"
+          srcset="
+            images/mobile/image-hero.jpg    1x,
+            images/mobile/image-hero@2x.jpg 2x
+          "
+        />
+      </picture>
 
       <div class="header-content">
         <h1 class="hero-heading">

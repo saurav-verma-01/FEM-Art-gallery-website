@@ -25,3 +25,10 @@
     line-height: 0.92857;
   }
 }
+
+@media (width > 74em) {
+  .hero-text {
+    max-width: 22rem;
+    line-height: 1.45455;
+  }
+}
