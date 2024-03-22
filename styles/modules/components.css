@@ -1,0 +1,33 @@
+.btn {
+  font-size: var(--btn-text);
+  display: grid;
+  grid-template-columns: 12.75rem 3.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn .btn-text {
+  padding-block: 1.5rem;
+  display: flex;
+  justify-content: center;
+  background: var(--dark);
+  color: var(--white);
+  transition: all 0.4s ease-in-out;
+}
+
+.btn .btn-icon {
+  background-color: var(--tan);
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn:is(:hover, :active) .btn-text {
+  background: var(--tan);
+}
+
+.btn:is(:hover, :active) .btn-icon {
+  background: var(--dark);
+}

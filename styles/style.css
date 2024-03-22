@@ -1,1 +1,4 @@
 @import url(./modules/base.css);
+@import url(./modules/components.css);
+@import url(./modules/typography.css);
+@import url(./modules/home.css);

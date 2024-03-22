@@ -104,3 +104,12 @@ We love receiving feedback! We're always looking to improve our challenges and o
 ### Big Shoulders - 900, 800
 
 ### Outfit Light - 400
+
+- heading-1 : 3.75rem for 20rem, 6rem for 90rem
+- heading-2 : 3.125rem for 20rem, 4.375rem for 90rem
+- heading-3 : 3.125rem for 20rem, 3.75rem for 90rem
+- heading-4 : 2rem for 20rem, 2.25rem for 90rem
+- text-1 : 1.125rem for 20rem, 1.375rem 90rem
+- text-sm : 1rem for 20rem, 1.125rem 90rem
+
+- btn-text: 1.25rem

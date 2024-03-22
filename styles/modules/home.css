@@ -1,0 +1,7 @@
+.header-content {
+  padding-inline: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-block-start: 2rem;
+}

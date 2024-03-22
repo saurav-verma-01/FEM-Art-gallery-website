@@ -1,0 +1,19 @@
+.hero-heading {
+  font-family: "Big Shoulders Display Black";
+  color: var(--dark);
+  font-size: var(--heading-1);
+  font-style: normal;
+  line-height: 0.91667;
+  text-transform: uppercase;
+}
+.hero-text {
+  font-family: "Outfit Regular";
+  line-height: 1.55556;
+  color: var(--grey);
+}
+.btn {
+  font-family: "Big Shoulders Display ExtraBold";
+  line-height: normal;
+  letter-spacing: 0.22725rem;
+  text-transform: uppercase;
+}
