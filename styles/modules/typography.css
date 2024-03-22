@@ -10,10 +10,18 @@
   font-family: "Outfit Regular";
   line-height: 1.55556;
   color: var(--grey);
+  font-size: var(--text);
+  max-width: 25rem;
 }
 .btn {
   font-family: "Big Shoulders Display ExtraBold";
   line-height: normal;
   letter-spacing: 0.22725rem;
   text-transform: uppercase;
+}
+
+@media (width > 48em) {
+  .hero-heading {
+    line-height: 0.92857;
+  }
 }

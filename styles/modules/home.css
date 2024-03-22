@@ -1,7 +1,32 @@
+.banner-img {
+  width: 100%;
+  max-inline-size: 100%;
+}
+
 .header-content {
-  padding-inline: 1rem;
+  padding-inline: 1.25rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
   margin-block-start: 2rem;
+}
+
+@media (width > 44em) {
+  .header {
+    display: flex;
+    align-items: center;
+    padding-inline-end: 48px;
+  }
+  .banner-img {
+    width: 27.3125rem;
+    height: 43.75rem;
+    flex-shrink: 0;
+    object-fit: cover;
+  }
+  .header-content {
+    height: max-content;
+    margin-inline-start: -3rem;
+    padding: 0;
+    gap: 3rem;
+  }
 }

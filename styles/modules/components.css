@@ -4,6 +4,7 @@
   grid-template-columns: 12.75rem 3.5rem;
   border: none;
   cursor: pointer;
+  width: max-content;
 }
 
 .btn .btn-text {
