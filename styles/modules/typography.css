@@ -64,3 +64,17 @@
     margin-block-start: 1.5rem;
   }
 }
+
+.gallery-2-content h2 {
+  font-family: "Big Shoulders Display Black";
+  font-size: var(--heading-3);
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.gallery-2-content p {
+  font-family: "Outfit Regular";
+  font-size: var(--text);
+  opacity: 0.8;
+  line-height: 1.5556;
+}
