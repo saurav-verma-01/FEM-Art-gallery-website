@@ -1,0 +1,48 @@
+.main {
+  margin-block: 7.5rem 2rem;
+  padding-inline: 1rem;
+}
+
+.gallery-img {
+  display: block;
+  max-width: 30rem;
+  margin-inline: auto;
+}
+
+.gallery-content {
+  margin-inline: auto;
+  max-width: 30rem;
+}
+
+@media (width > 44rem) {
+  .main {
+    padding-inline: 2.5rem;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: 4fr 7fr;
+    gap: 1rem;
+    align-items: center;
+    max-width: 60rem;
+    margin-inline: auto;
+  }
+  .gallery-img {
+    order: 2;
+    justify-self: flex-end;
+    width: 100%;
+    max-width: 30rem;
+  }
+}
+
+@media (width > 74rem) {
+  .gallery {
+    grid-template-columns: 3.75fr 7fr;
+    gap: 5.75rem;
+    max-width: 70rem;
+  }
+
+  .gallery-img {
+    max-width: 42rem;
+  }
+}

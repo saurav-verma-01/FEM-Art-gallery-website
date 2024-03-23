@@ -32,3 +32,35 @@
     line-height: 1.45455;
   }
 }
+
+/* Main Section */
+
+.gallery-content h2 {
+  font-family: "Big Shoulders Display Black";
+  font-size: var(--heading-3);
+  margin-block-start: 1.56rem;
+  line-height: 0.9;
+  color: var(--dark);
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-content p {
+  font-family: "Outfit Regular";
+  font-size: var(--text);
+  line-height: 1.56;
+  margin-block-start: 1.31rem;
+  color: var(--grey);
+  max-width: 30rem;
+}
+
+@media (width > 44rem) {
+  .gallery-content h2 {
+    margin-block-start: 0;
+  }
+
+  .gallery-content p {
+    margin-block-start: 1.5rem;
+  }
+}
