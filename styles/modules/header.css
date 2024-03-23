@@ -1,0 +1,102 @@
+.desktop-header {
+  display: none;
+}
+.banner-img {
+  width: 100%;
+  max-inline-size: 100%;
+}
+.header-content {
+  padding-inline: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-block-start: 2rem;
+}
+
+@media (width > 44em) {
+  .header {
+    padding-inline-end: 1rem;
+    height: max-content;
+  }
+  .header-comp {
+    display: flex;
+    align-items: center;
+  }
+  .banner-img {
+    width: 27.3125rem;
+    height: 43.75rem;
+    flex-shrink: 0;
+    object-fit: cover;
+  }
+  .header-content {
+    height: max-content;
+    margin-inline-start: -3rem;
+    padding: 0;
+    gap: 3rem;
+  }
+}
+
+@media (width > 74em) {
+  .header {
+    height: max-content;
+    position: relative;
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+  }
+
+  .desktop-header {
+    background-color: var(--dark);
+    display: block;
+    width: 100%;
+    height: 50rem;
+  }
+  .desktop-heading-white,
+  .desktop-heading-black {
+    position: absolute;
+    /* top: 11.81rem;
+    left: 10.31rem; */
+    top: calc(1.5rem + 20.125vh);
+    left: calc(2rem + 9.15vw);
+
+    font-family: "Big Shoulders Display Black";
+    font-size: var(--heading-1);
+    line-height: 0.91667;
+    text-transform: uppercase;
+    z-index: 4;
+    mix-blend-mode: difference;
+    color: var(--white);
+  }
+
+  .desktop-heading-black {
+    mix-blend-mode: color-dodge;
+    color: var(--dark);
+  }
+
+  .banner-img {
+    width: 33.75rem;
+    height: 50rem;
+    flex-shrink: 0;
+  }
+  .hero-heading {
+    display: none;
+  }
+  .header-content {
+    margin-inline-start: -4rem;
+    transform: translateY(-5rem);
+  }
+}
+
+@media (width > 110em) {
+  .header {
+    /* width: 100%; */
+    grid-template-columns: 4fr 8fr;
+  }
+  .desktop-heading-white,
+  .desktop-heading-black {
+    font-size: 7rem;
+  }
+  .hero-text {
+    font-size: 2rem;
+    max-width: 35rem;
+  }
+}
