@@ -4,6 +4,10 @@
   padding-inline: 2rem;
   padding-block: 3rem;
 }
+.footer-location {
+  background-color: var(--tan);
+  color: var(--dark);
+}
 
 .footer-container {
   display: flex;
@@ -21,7 +25,7 @@
   font-size: var(--text-sm);
   line-height: 1.625;
   font-family: "Outfit Regular";
-  padding-inline-end: 5rem;
+  /* padding-inline-end: 1rem; */
 }
 
 .footer-socials {
@@ -34,9 +38,15 @@
 .footer-socials span:is(:hover, :focus-visible) .footer-icon path {
   fill: var(--tan);
 }
+.footer-location-socials span:is(:hover, :focus-visible) .footer-icon path {
+  fill: var(--white);
+}
 
 .footer-icon path {
   transition: all 0.3s ease-in-out;
+}
+.footer-location .footer-icon path {
+  fill: var(--dark);
 }
 
 @media (width > 44em) {
@@ -54,6 +64,9 @@
   .footer-socials {
     justify-self: flex-end;
   }
+  .footer-text {
+    padding-inline-end: 3rem;
+  }
 }
 
 @media (width > 74em) {
@@ -62,7 +75,8 @@
     padding-block: 5rem;
   }
   .footer-container {
-    gap: 3.5rem;
+    gap: 10rem;
+    max-width: 75.5rem;
   }
   .footer-logo {
     width: 9.97325rem;

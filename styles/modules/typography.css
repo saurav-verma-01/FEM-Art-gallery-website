@@ -78,3 +78,38 @@
   opacity: 0.8;
   line-height: 1.5556;
 }
+
+.location-heading {
+  font-size: var(--heading-2);
+  font-family: "Big Shoulders Display Black";
+  text-transform: uppercase;
+  line-height: 0.9;
+}
+.location-inner-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.location-subheading {
+  font-size: var(--heading-4);
+  font-family: "Big Shoulders Display Black";
+  color: var(--tan);
+  text-transform: uppercase;
+  /* margin-block-end: 1.25rem; */
+}
+
+.address {
+  font-family: "Outfit Regular";
+  font-size: var(--text);
+  /* margin-block-end: 1.25rem; */
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.location-text {
+  font-family: "Outfit Regular";
+  line-height: 1.55556;
+  font-size: var(--text);
+}

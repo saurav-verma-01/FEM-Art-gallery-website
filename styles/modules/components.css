@@ -7,6 +7,29 @@
   width: max-content;
 }
 
+.location.header {
+  position: relative;
+}
+.btn-secondary {
+  position: absolute;
+  grid-template-columns: 3.5rem 12.75rem;
+  top: 0;
+  left: 0;
+}
+@media (width > 44em) {
+  .btn-secondary {
+    left: 40px;
+  }
+}
+@media (width > 74em) {
+  .btn-secondary {
+    left: 156px;
+  }
+}
+.btn-secondary .btn-text {
+  order: 2;
+}
+
 .btn .btn-text {
   padding-block: 1.5rem;
   display: flex;
