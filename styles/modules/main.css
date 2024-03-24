@@ -50,6 +50,7 @@
 
   .main {
     max-width: 75.5rem;
+    margin-block-end: 11.25rem;
   }
 
   .gallery-img {
