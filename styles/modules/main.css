@@ -67,6 +67,7 @@
   background-color: var(--dark);
   color: var(--white);
   padding-block: 3rem;
+  justify-content: center;
   padding-inline: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -98,7 +99,7 @@
   }
 
   .gallery-2-content {
-    padding-block: 5.31rem;
+    /* padding-block: 5.31rem; */
     padding-inline-start: 1.81rem;
     padding-inline-end: 5rem;
     gap: 1.5rem;
@@ -112,7 +113,7 @@
   }
 
   .gallery-2-content {
-    padding-block: 4rem;
+    /* padding-block: 4rem; */
     padding-inline: 3rem;
     gap: 2rem;
   }

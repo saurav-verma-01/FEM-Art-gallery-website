@@ -1,0 +1,73 @@
+.footer {
+  background-color: var(--dark);
+  color: var(--white);
+  padding-inline: 2rem;
+  padding-block: 3rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.38rem;
+  max-width: 26rem;
+  margin-inline: auto;
+}
+.footer-logo {
+  width: 6.87813rem;
+  height: 2.5rem;
+}
+
+.footer-text {
+  font-size: var(--text-sm);
+  line-height: 1.625;
+  font-family: "Outfit Regular";
+  padding-inline-end: 5rem;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 20px;
+}
+.footer-socials span {
+  cursor: pointer;
+}
+.footer-socials span:is(:hover, :focus-visible) .footer-icon path {
+  fill: var(--tan);
+}
+
+.footer-icon path {
+  /* fill: red */
+  transition: all 0.3s ease-in-out;
+}
+
+@media (width > 44em) {
+  .footer {
+    padding-inline: 2.5rem;
+    padding-block: 3.5rem;
+  }
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 3.5rem;
+    max-width: 60rem;
+  }
+  .footer-socials {
+    justify-self: flex-end;
+  }
+}
+
+@media (width > 74em) {
+  .footer {
+    padding-inline: 10rem;
+    padding-block: 5rem;
+  }
+  .footer-container {
+    gap: 3.5rem;
+  }
+  .footer-logo {
+    width: 9.97325rem;
+    height: 3.625rem;
+    flex-shrink: 0;
+  }
+}
